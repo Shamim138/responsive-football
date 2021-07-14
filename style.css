@@ -21,6 +21,7 @@ header:hover{
 .watch-live{
 background-color: red;
 }
+/* 9 players here   */
 main{
     background-color: rgb(221, 217, 210);
     margin-top: 50px;
@@ -89,4 +90,19 @@ a{
 .footer-copyright{
     justify-content: right;
     margin-left: 700px;
+}
+/* media query */
+/* mobile device  */
+@media Only Screen and (max-width:688px) {
+    header,footer{grid-template-columns: repeat(1. 1fr);}
+    .players,.container-3{
+        grid-template-columns: repeat(1. 1fr);
+    }
+}
+/* for tab  */
+@media Only Screen and (min-width:668px) (max-width:688px) {
+    header,footer{grid-template-columns: repeat(2. 1fr);}
+    .players,.container-3{
+        grid-template-columns: repeat(2. 1fr);
+    }
 }
